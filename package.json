@@ -3,7 +3,7 @@
   "displayName": "Wyrm",
   "description": "Syntax highlighting, diagnostics, navigation and completion (via wyrm-lsp) for the Wyrm scripting language",
   "version": "0.1.0",
-  "publisher": "amarach",
+  "publisher": "wyrm-language",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -228,7 +228,7 @@
     "type": "git",
     "url": "https://github.com/Wyrm-Language/wyrm-vscode.git"
   },
-  "homepage": "https://github.com/Wyrm-Language/wyrm-vscode#readme",
+  "homepage": "https://wyrm-lang.com",
   "bugs": {
     "url": "https://github.com/Wyrm-Language/wyrm-vscode/issues"
   },
