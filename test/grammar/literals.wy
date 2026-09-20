@@ -1,0 +1,19 @@
+# SYNTAX TEST "source.wyrm" "literals"
+
+x := 0b1010_0000
+#    ^^^^^^^^^^^ constant.numeric.binary.wyrm
+y := 4.
+#    ^^ constant.numeric.float.wyrm
+z := 1_234.5e-9
+#    ^^^^^^^^^^ constant.numeric.float.wyrm
+w := 0xfeed_beef
+#    ^^^^^^^^^^^ constant.numeric.hex.wyrm
+s := """multi""" + "after"
+#    ^^^^^^^^^^^ string.quoted.triple.wyrm
+#                  ^^^^^^^ string.quoted.double.wyrm
+op := '<=>
+#     ^^^ constant.other.symbol.operator.wyrm
+sym := 'fn
+#      ^^^ constant.other.symbol.wyrm
+dots := ...
+#       ^^^ constant.language.ellipsis.wyrm

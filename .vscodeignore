@@ -1,0 +1,18 @@
+# Ship only what the extension needs at runtime: the esbuild bundle in dist/,
+# the manifest, grammar and language configuration. Everything else stays out.
+.vscode/**
+.github/**
+src/**
+test/**
+scripts/**
+examples/**
+node_modules/**
+esbuild.mjs
+eslint.config.mjs
+tsconfig.json
+**/*.map
+**/*.ts
+**/*.vsix
+.gitignore
+AGENTS.md
+quick-start.sh

@@ -1,0 +1,15 @@
+# SYNTAX TEST "source.wyrm" "keywords and decorators"
+
+emit signal
+# <- keyword.control.concurrency.wyrm
+#    ^^^^^^ keyword.control.concurrency.wyrm
+task thread
+# <- keyword.control.concurrency.wyrm
+@accept 'TOK_XID
+# <- punctuation.definition.decorator.wyrm
+#^^^^^^ entity.name.function.decorator.wyrm
+@cached(1) fn f():
+#^^^^^^ entity.name.function.decorator.wyrm
+defer on error:
+# <- keyword.control.exception.wyrm
+#     ^^^^^^^^ keyword.control.exception.wyrm
