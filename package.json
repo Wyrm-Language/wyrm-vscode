@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "publisher": "wyrm-language",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.91.0"
   },
   "categories": [
     "Programming Languages"
@@ -206,7 +206,6 @@
     "typecheck": "tsc -p ./ --noEmit",
     "lint": "eslint src",
     "test:grammar": "vscode-tmgrammar-test -g syntaxes/wyrm.tmLanguage.json \"test/grammar/*.wy\"",
-    "check:drift": "node scripts/check-drift.mjs",
     "test": "npm run typecheck && npm run lint && npm run test:grammar",
     "vsix": "vsce package"
   },
@@ -215,7 +214,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
-    "@types/vscode": "^1.75.0",
+    "@types/vscode": "~1.91.0",
     "@vscode/vsce": "^3.0.0",
     "esbuild": "^0.25.0",
     "eslint": "^9.0.0",
